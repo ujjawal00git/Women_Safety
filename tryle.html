@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Safety Initiative</title>
+    <style>
+        .service-item {
+            display: none;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const headers = document.querySelectorAll('.services > h2');
+            headers.forEach(header => {
+                header.addEventListener('click', function () {
+                    const nextElements = [];
+                    let nextElement = header.nextElementSibling;
+                    while (nextElement && nextElement.tagName !== 'H2') {
+                        nextElements.push(nextElement);
+                        nextElement = nextElement.nextElementSibling;
+                    }
+                    nextElements.forEach(el => {
+                        el.style.display = el.style.display === 'block' ? 'none' : 'block';
+                    });
+                });
+            });
+
+            const subHeaders = document.querySelectorAll('.service-item > h3');
+            subHeaders.forEach(subHeader => {
+                subHeader.addEventListener('click', function () {
+                    window.location.href = subHeader.dataset.link;
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+<main>
+    <section class="intro">
+        <h1>Our Services</h1>
+        <p>The Women's Safety Initiative (WSI) provides a range of services designed to support and protect women, ensuring their safety and promoting their rights.</p>
+    </section>
+    
+    <section class="services">
+        <h2>Educational Programs</h2>
+        <div class="service-item">
+            <h3 data-link="workshops.html">Workshops and Seminars</h3>
+            <p>We conduct workshops on self-defense, legal rights, and mental health. Scheduled sessions across various locations, expert speakers and trainers, practical demonstrations, and interactive sessions.</p>
+        </div>
+        <div class="service-item">
+            <h3 data-link="community_outreach.html">Community Outreach</h3>
+            <p>Programs aimed at educating communities about women's safety. Community events and forums, distribution of educational materials, collaboration with local organizations and leaders.</p>
+        </div>
+
+        <h2>Advocacy and Policy Development</h2>
+        <div class="service-item">
+            <h3 data-link="policy_advocacy.html">Policy Advocacy</h3>
+            <p>We engage with policymakers to develop laws that protect women. Drafting and proposing new legislation, lobbying for policy changes, participation in governmental advisory committees.</p>
+        </div>
+        <div class="service-item">
+            <h3 data-link="research.html">Research</h3>
+            <p>Conducting research to inform policy decisions and raise awareness. Studies on violence against women, data collection and analysis, publication of research findings.</p>
+        </div>
+        <div class="service-item">
+            <h3 data-link="campaigns.html">Campaigns</h3>
+            <p>National campaigns to raise awareness about women's safety. Media campaigns (TV, radio, online), public service announcements, collaboration with celebrities and influencers.</p>
+        </div>
+
+        <h2>Collaboration and Partnerships</h2>
+        <div class="service-item">
+            <h3 data-link="ngo_partnerships.html">NGO Partnerships</h3>
+            <p>Collaborations with NGOs to deliver comprehensive support services. Joint programs and initiatives, resource sharing, cross-training of staff.</p>
+        </div>
+        <div class="service-item">
+            <h3 data-link="community_leaders.html">Community Leaders</h3>
+            <p>Working with community leaders to address local issues. Community-based safety programs, engagement with local councils and groups, advocacy for community-specific solutions.</p>
+        </div>
+        <div class="service-item">
+            <h3 data-link="law_enforcement.html">Law Enforcement</h3>
+            <p>Partnerships with law enforcement agencies to ensure effective response to women's safety issues. Training for law enforcement personnel, joint task forces, reporting and referral systems.</p>
+        </div>
+
+        <h2>Additional Services</h2>
+        <div class="service-item">
+            <h3 data-link="complaint_services.html">Complaint Services</h3>
+            <p>Instructions on how to file a complaint, specific section for filing complaints against NRIs, and portal for users to check the status of their complaints. Confidentiality assurance and secure login.</p>
+        </div>
+        <div class="service-item">
+            <h3 data-link="e_portal.html">E-Portal Services</h3>
+            <p>Online services and resources available for women. Access to support resources, online consultations and appointments, digital educational materials.</p>
+        </div>
+        <div class="service-item">
+            <h3 data-link="staff_login.html">NWC Staff Login</h3>
+            <p>Secure login section for National Women's Commission staff members. Staff access to internal resources, secure communication channels, administrative tools and reports.</p>
+        </div>
+        <div class="service-item">
+            <h3 data-link="internship_opportunities.html">NWC Internship Opportunities</h3>
+            <p>Information on internship programs available at the National Women's Commission. Details on application process, internship roles and responsibilities, benefits and opportunities for professional growth.</p>
+        </div>
+
+        <h2>Support Services</h2>
+        <div class="service-item">
+            <h3 data-link="helpline.html">Helpline</h3>
+            <p>Our 24/7 helpline offers immediate assistance and support to women in distress. Confidential support, trained professionals available at all times, multi-lingual support.</p>
+        </div>
+        <div class="service-item">
+            <h3 data-link="counseling.html">Counseling</h3>
+            <p>We provide professional counseling services to help women cope with trauma and emotional challenges. Individual and group sessions, trauma-informed care, support for emotional and psychological well-being.</p>
+        </div>
+        <div class="service-item">
+            <h3 data-link="legal_aid.html">Legal Aid</h3>
+            <p>Our legal team offers free legal advice and representation to women facing legal issues. Assistance with legal documentation, representation in court, legal rights education and advice.</p>
+        </div>
+    </section>
+</main>
+</body>
+</html>

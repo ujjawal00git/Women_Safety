@@ -1,0 +1,151 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 90px;
+}
+
+header .logo img {
+    height: 85px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding-right: 40px;
+    font-size: 20px;
+}
+
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.intro, .services, .sidebar {
+    margin-bottom: 30px;
+}
+
+.intro h1 {
+    color: #f44336;
+    font-size: 36px;
+}
+
+.intro p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.8;
+}
+
+.services h2 {
+    color: #f44336;
+    font-size: 30px;
+    border-bottom: 2px solid #f44336;
+    padding-bottom: 5px;
+}
+
+.service-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.service-item h3 a {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+
+
+.service-item p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.sidebar {
+    background: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #f44336;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    color: #f44336;
+    text-decoration: underline;
+}
+
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .contact-info, footer .social-media {
+    margin-bottom: 10px;
+}
+
+footer .social-media a {
+    color: #f44336;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
+}

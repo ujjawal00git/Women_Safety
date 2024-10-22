@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.mainhead {
+    height: 850px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+    z-index: 10;
+}
+
+#logo {
+    height: 85px;
+}
+
+.nav {
+    color: #000;
+    font-size: 25px;
+    text-decoration: none;
+    padding-right: 20px;
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+}
+
+.imgcon {
+    display: flex;
+    align-items: center;
+    width: 10%;
+}
+
+.ancon {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: flex-end;
+}
+
+.nav-container {
+    position: relative;
+    display: block;
+}
+
+.nav-container .nav {
+    display: block;
+}
+
+.sub-nav {
+    display: none;
+    
+}
+
+.nav-container:hover .sub-nav {
+    display: block;
+    position: absolute;
+    background-color: #333231;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.sub-nav a {
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+}
+
+.sub-nav a:hover {
+    background-color: #6175d7;
+    color: rgb(26, 26, 26);
+}
+
+
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+.h1content {
+    text-align: center;
+    padding-top: 200px;
+    font-size: 80px;
+    color: black;
+    transition: 0.5s;
+}
+
+.h1content:hover {
+    -webkit-text-stroke: 2px #000;
+    color: transparent;
+}
+
+.content {
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+#btn {
+    color: #000;
+    display: inline-block;
+    font-size: 20px;
+    border: 2px solid #000;
+    padding: 15px 56px;
+    border-radius: 40px;
+    margin-top: 20px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    z-index: 10;
+}
+
+footer .contact-info, footer .social-media {
+    margin-bottom: 10px;
+}
+
+footer .social-media a {
+    color: #f44336;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
+}

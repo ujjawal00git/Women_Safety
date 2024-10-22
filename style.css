@@ -1,0 +1,150 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+.mainhead{
+    height: 100vh;
+}
+
+.container{
+    width: 100%;
+    height: 90px;
+}
+
+#logo{
+    height: 85px ;
+}
+
+.nav{
+    color: #000;
+    font-size: 25px;
+    text-decoration: none;
+    padding-right: 80px;
+}
+
+.imgcon{
+    display: flex;
+    float: left;
+    width: 10%;
+    justify-content: center;
+}
+
+.ancon{
+    display: flex;
+    float: right;
+    width: 80%;
+    justify-content: right;
+    padding-top: 30px;
+}
+
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+.h1content {
+
+    text-align: center;
+    padding-top: 200px;
+    font-size: 80px;
+    color: black;
+    transition: 0.5s;
+
+}
+.h1content:hover {
+    -webkit-text-stroke: 2px #000;
+    color: transparent;
+}
+.content{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+#btn{
+   
+    color: #000;
+    display: inline-block;
+    font-size: 20px;
+    border: 2px solid #000;
+    padding: 15px 56px;
+    border-radius: 40px;
+    margin-top: 20px;
+    background-color: transparent;
+   
+}
+
+#videoid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .backvideo {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Ensures the video covers the entire area without distortion */
+  }
+  
+  /* Media query for tablets (screens between 600px and 1200px) */
+  @media (min-width: 600px) and (max-width: 1200px) {
+    #videoid {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .backvideo {
+      width: 100vw;
+      height: 100vh;
+    }
+  }
+  
+  /* Media query for mobile devices (screens smaller than 600px) */
+  @media (max-width: 599px) {
+    #videoid {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .backvideo {
+      width: 100vw;
+      height: 100vh;
+    }
+  }
+
+
+
+/* External CSS */
+footer {
+    
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .contact-info, footer .social-media {
+    margin-bottom: 10px;
+}
+
+footer .social-media a {
+    color: #f44336;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
+}
